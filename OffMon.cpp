@@ -14,11 +14,11 @@ int WINAPI WinMain
  LPSTR lpCmdLine, // pointer to command line
  int nCmdShow // show state of window
  ){
-	SendMessage(HWND_BROADCAST, WM_SYSCOMMAND, SC_MONITORPOWER, 0);
+	//SendMessage(HWND_BROADCAST, WM_SYSCOMMAND, SC_MONITORPOWER, 0);
 
-	Sleep(5000);
+	Sleep(3000);
 	SendMessage(HWND_BROADCAST, WM_SYSCOMMAND, SC_MONITORPOWER, 1);
-  	Sleep(5000);
-	SendMessage(HWND_BROADCAST, WM_SYSCOMMAND, SC_MONITORPOWER, -1);
+  	//Sleep(5000);
+	//SendMessage(HWND_BROADCAST, WM_SYSCOMMAND, SC_MONITORPOWER, -1);
 	return 0;	
 }
